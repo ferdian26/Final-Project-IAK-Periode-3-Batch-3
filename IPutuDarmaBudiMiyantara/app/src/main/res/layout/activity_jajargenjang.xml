@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Jajargenjang"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luas Jajar Genjang"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <ImageView
+        android:layout_width="291dp"
+        android:layout_height="148dp"
+        android:src="@drawable/jajargenjang"
+        android:layout_gravity="center"/>
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/etjajargenjangalas"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Alas / D C"
+        android:textAlignment="center"/>
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/etjajagenjangtinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Tinggi / B b"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnLuasJajargenjang"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:text="Luas " />
+        <Button
+            android:id="@+id/btnKelilingJajargenjang"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:text="Keliling "/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvhasiljajargenjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="30sp" />
+
+</LinearLayout>

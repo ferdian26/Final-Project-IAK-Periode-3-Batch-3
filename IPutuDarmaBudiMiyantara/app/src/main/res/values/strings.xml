@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Alat hitung</string>
+    <string name="jika_tidak_diketahui">Jika luas alas dan juga sisi tegak tidak diketahui maka bisa menggunakan fitur di bawah</string>
+</resources>

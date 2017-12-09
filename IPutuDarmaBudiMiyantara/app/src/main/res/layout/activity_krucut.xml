@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Krucut"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kerucut"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+            <ImageView
+                android:layout_width="291dp"
+                android:layout_height="158dp"
+                android:layout_gravity="center"
+                android:src="@drawable/krucut"/>
+            <EditText
+                android:id="@+id/etJarijariKerucut"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan jari-jari"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="atau masukan"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/etDiameterKerucut"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Masukan diameter"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/etTinggiKerucut"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan tinggi/ t"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/etSisiPelukiskerucut"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan garis pelukis/ sisi miring"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnLuasPermukaanKerucut"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas permukaan"/>
+                <Button
+                    android:id="@+id/btnVolumeKerucut"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="volume kerucut"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHasilKerucut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

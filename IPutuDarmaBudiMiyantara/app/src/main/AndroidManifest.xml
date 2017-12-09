@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="stikombali.alathitung">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/background"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".segitiga" />
+        <activity android:name=".Samakaki" />
+        <activity android:name=".Samasisi" />
+        <activity android:name=".Sikusiku" />
+        <activity android:name=".Persegi" />
+        <activity android:name=".Lingkaran" />
+        <activity android:name=".Jajargenjang" />
+        <activity android:name=".Belahketupat" />
+        <activity android:name=".Trapesium" />
+        <activity android:name=".Layanglayang" />
+        <activity android:name=".Bangundatar" />
+        <activity android:name=".Convertsatuan" />
+        <activity android:name=".info" />
+        <activity android:name=".Bangunruang" />
+        <activity android:name=".Kubus" />
+        <activity android:name=".Balok" />
+        <activity android:name=".Krucut" />
+        <activity android:name=".Prisma" />
+        <activity android:name=".Limas" />
+        <activity android:name=".Tabung" />
+        <activity android:name=".Bola"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Persegi"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Persegi Sama Sisi"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/persegi"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etSisipersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan sisi Persegi / AB/ BD/ DC/ CA"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnLuaspersegi"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas Persegi" />
+                <Button
+                    android:id="@+id/btnKelilingpersegi"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling Persegi"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Persegi Panjang"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="221dp"
+                android:layout_height="135dp"
+                android:src="@drawable/segipanajang"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etPanjangpersegipanjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Panjang Persegi Panjang / AB/ CD"
+                android:textAlignment="center" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etLebarpersegipanjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lebar Persegi Panjang / AC/ BD"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnLuasPersegipanjang"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas Persegi Panjang"/>
+                <Button
+                    android:id="@+id/btnKelilingpersegipanjang"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling Persegi Panjang"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/HasilPersegi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

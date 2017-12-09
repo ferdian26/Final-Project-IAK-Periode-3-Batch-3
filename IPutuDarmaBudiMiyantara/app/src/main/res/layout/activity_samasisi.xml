@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Samasisi"
+    android:weightSum="1">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Keliling Segitiga Sama Sisi"
+               android:textAlignment="center"
+               android:textSize="30sp"/>
+           <ImageView
+               android:layout_width="282dp"
+               android:layout_height="170dp"
+               android:src="@drawable/samasisi"
+               android:layout_weight="3.05"
+               android:layout_gravity="center"/>
+           <EditText
+               android:inputType="numberDecimal"
+               android:id="@+id/etAlassamasisi"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan Alas / C B"
+               android:textAlignment="center"/>
+           <EditText
+               android:id="@+id/ettinggisamasisi"
+               android:inputType="numberDecimal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan Tinggi / A a"
+               android:textAlignment="center"/>
+           <Button
+               android:id="@+id/btnHasilluasSamasisi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Jawab"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Keliling Segitiga Sama Sisi"
+               android:textAlignment="center"
+               android:textSize="30sp"/>
+           <EditText
+               android:inputType="numberDecimal"
+               android:id="@+id/etSisi1Samasisi"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Masukan salah satu sisinya / AB/ BC/ CA"
+               android:textAlignment="center"/>
+           <Button
+               android:id="@+id/btnHasilKelilingSamasisi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Jawab"/>
+           <TextView
+               android:id="@+id/tvHasilSamasisi"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Hasil"
+               android:textSize="30sp"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Jika Tinggi Segitiga Tidak Diketahui"
+               android:textSize="20sp"
+               android:textAlignment="center"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/btnMTSSS"
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:text="mencari tinggi"
+                   android:textAlignment="center"/>
+               <EditText
+                   android:id="@+id/etMTSSS"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="input p CB"
+                   android:textAlignment="center"/>
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

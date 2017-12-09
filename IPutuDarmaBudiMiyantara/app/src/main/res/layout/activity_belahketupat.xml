@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Belahketupat"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luas Belah Ketupat"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/ketupat"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etdiagonal1"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Diagonal 1 / A C"
+                android:textAlignment="center" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etdiagonal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Diagonal 2 / D B"
+                android:textAlignment="center" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnluasbelahketupat"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_weight="0.04" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keliling Belah Letupat"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etsisibelahketupat"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Panjang Salah Satu Sisi / A B"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnkelilingBelahketupat"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHasilbelahketupat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Jika Salah Satu Diagonal, dan Salah Satu Sisi Tidak Diketahui"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnMDD"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="mencari diagonal"/>
+                <EditText
+                    android:id="@+id/etMDDdiagonal"
+                    android:inputType="numberDecimal"
+                    android:layout_width="135sp"
+                    android:layout_height="wrap_content"
+                    android:hint="input AC / DB"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:id="@+id/etMDDsisi"
+                    android:inputType="numberDecimal"
+                    android:layout_width="135dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:hint="input satu sisi"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnMSD"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="mencari sisi"/>
+                <EditText
+                    android:id="@+id/etMSDdiagonal1"
+                    android:inputType="numberDecimal"
+                    android:layout_width="135sp"
+                    android:layout_height="wrap_content"
+                    android:hint="input AC"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:id="@+id/etMSDdiagonal2"
+                    android:inputType="numberDecimal"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input DB"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
