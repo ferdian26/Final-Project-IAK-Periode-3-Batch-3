@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_artculture"
+        android:title="Art and Culture"
+        android:icon="@drawable/ic_lotus"></item>
+
+    <item android:id="@+id/nav_localbrand"
+        android:title="Local Brand"
+        android:icon="@drawable/ic_local_activity_black_24dp"></item>
+
+    <item android:id="@+id/nav_about"
+        android:title="About"
+        android:icon="@drawable/ic_info"
+        ></item>
+</menu>

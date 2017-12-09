@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.nusantara.LocalBrandFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            >
+
+            <!-- BANNER-->
+            <LinearLayout
+                android:id="@+id/banner_localbrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/banner_brand_local"
+                    android:scaleType="fitXY"
+                    />
+
+            </LinearLayout>
+            <!-- /BANNER-->
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/banner_localbrand"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                                <!-- LOCAL BRAND -->
+                                <LinearLayout
+                                    android:id="@+id/head_localbrand"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#fff"
+                                    android:padding="3sp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10sp"
+                                        android:text="LOCAL BRAND"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+
+                                <RelativeLayout
+                                    android:id="@+id/view_localbrand"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/head_localbrand"
+                                    android:padding="1sp">
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/rv_menu_localbrand"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        tools:listitem="@layout/menu_list_localbrand">
+
+                                    </android.support.v7.widget.RecyclerView>
+
+                                </RelativeLayout>
+                                <!-- / LOCAL BRAND -->
+
+
+                    </RelativeLayout>
+
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+</FrameLayout>

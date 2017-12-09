@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175sp"
+    android:background="@drawable/header_menu_button"
+    android:orientation="horizontal"
+    android:layout_margin="2sp"
+    android:padding="5sp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/gambar_localbrand"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/splashscreen"
+            android:scaleType="fitXY"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_idlocalbrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id local brand"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_namalocalbrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nama local brand"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_namadaerah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nama daerah"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

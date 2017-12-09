@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.nusantara.CultureFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_weight = "1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- CULTURE -->
+            <LinearLayout
+                android:id="@+id/head_culture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="CULTURE"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/view_culture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head_culture"
+                android:orientation="horizontal"
+                android:padding="1sp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_menu_event"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    ></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!-- / CULTURE -->
+
+
+            <!-- CRAFTSMEN -->
+            <LinearLayout
+                android:id="@+id/head_craftsmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_culture"
+                android:background="#fff"
+                android:padding="3sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="HAND CRAFTS"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/view_craftsmen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/head_craftsmen"
+                android:fitsSystemWindows="true"
+                android:padding="1sp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_menu_craftsmen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            <!-- / CRAFTSMEN -->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
