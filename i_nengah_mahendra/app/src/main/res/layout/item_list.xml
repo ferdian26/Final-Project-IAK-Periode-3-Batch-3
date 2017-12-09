@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_detaildeskripsi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <View
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="1dp"
+        android:padding="2dp"
+        android:background="#d6d6d6"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ficture" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_nm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Kost"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_nm_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga: " />
+
+            <TextView
+                android:id="@+id/tv_nm_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat: " />
+
+            <TextView
+                android:id="@+id/tv_nm_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxLength="10"
+                android:text="Deskripsi:" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
