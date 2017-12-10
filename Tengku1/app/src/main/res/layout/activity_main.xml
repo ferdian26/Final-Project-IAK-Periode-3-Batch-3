@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hack"
+    tools:context="com.example.yottabyte.tokoilmu.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <com.jackandphantom.circularimageview.CircleImage
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/turnoff"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="10px"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10px"
+            android:background="#f0000000"
+            android:radius="20dp"
+            android:text="TokoIlmu.com\n Created on 2017"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
