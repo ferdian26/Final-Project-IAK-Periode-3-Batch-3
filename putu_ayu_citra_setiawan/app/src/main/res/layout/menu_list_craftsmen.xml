@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2sp"
+    android:background="@drawable/header_menu_button"
+    >
+
+    <ImageView
+        android:id="@+id/gambar_kerajinan"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@drawable/splashscreen"
+        android:scaleType="fitXY"
+        android:layout_margin="5sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        >
+
+        <TextView
+            android:id="@+id/id_craftsmen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/txt_namacraftsmen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama pengrajin"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_kerajinan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kerajinan"
+            android:layout_below="@+id/txt_namacraftsmen"
+            />
+
+        <TextView
+            android:id="@+id/txt_namadaerah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Daerah"
+            android:layout_below="@+id/txt_kerajinan"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
