@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Lingkaran"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luas dan Keliling lingkaran dengan Jari-Jari"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/lingkaran"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etJarijari"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Jari-Jari / a B"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="atau"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etDiameter"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Diameter / A B"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnLuasLingkaran"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas " />
+                <Button
+                    android:id="@+id/btnKelilinglingkaran"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling "
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHasilLingkaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

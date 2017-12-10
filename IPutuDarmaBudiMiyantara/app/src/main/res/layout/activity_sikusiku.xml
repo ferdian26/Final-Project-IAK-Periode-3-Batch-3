@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Sikusiku">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/siku"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luas Segitiga Sama Siku-Siku"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etAlasSikusiku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan panjang C D"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etTinggiSikusiku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan panjang A C"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/btnHasilluasSikusiku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawab"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keliling Segitiga Siku-Siku"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etSisi1Sikusiku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Panjang C D"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etSisi2Sikusiku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Panjang A C"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etSisi3Sikusiku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Sisi Miring"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/btnHasilKelilingSikusiku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jawab"/>
+            <TextView
+                android:id="@+id/tvHasilSikusiku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="Jika Alas, Tinggi, dan Sisis Miring Tidak Diketahui"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSikuMA"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mencari Alas"/>
+                <EditText
+                    android:id="@+id/etSikuMAmiring"
+                    android:inputType="numberDecimal"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input s miring"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etSikuMAtinggi"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input tinggi"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSikuMT"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mencari Tinggi"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etSikuMTmiring"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input s miring"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etSikuMTalas"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input alas"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSIkuSM"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mencari S Miring"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etSikuSMAlas"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input alas"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etSIkuSMtinggi"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:hint="input tinggi"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

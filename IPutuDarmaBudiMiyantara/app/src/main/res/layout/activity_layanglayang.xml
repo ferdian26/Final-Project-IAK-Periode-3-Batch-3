@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Layanglayang">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luas Layang-Layang"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="233dp"
+                android:layout_height="170dp"
+                android:src="@drawable/layanglayang"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etDiagonal1layanglayang"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Diagonal 1 / A C"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etDiagonal2layanglayang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Diagonal 2 / D B"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/btnLuaslayanglayang"
+                android:layout_gravity="center"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:text="Luas"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keliling Layang-Layang"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sisi atas /  Sisi pendek Layang-Layang"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etsisi1layanglayang"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Sisi 1 / A B"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etsisi2layanglayang"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Sisi 2 / A D"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sisi bawah / Sisi Panjang Layang-Layang"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etsisi3layanglayang"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Sisi 3 / B C"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etsisi4layanglayang"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Sisi 4 / D C"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnKelilinglayanglayang"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Keliling"/>
+            <TextView
+                android:id="@+id/tvHasillayanglayang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Jika Diagonal dan Salah Satu Sisi Tidak Diketahui"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnMDPL"
+                    android:layout_width="100dp"
+                    android:layout_height="135dp"
+                    android:text="mencari diagonal Panjang/ AC"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="135dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMDPLdiagonalpendek"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input p DB"
+                        android:textAlignment="center"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMDPLsisimiringpendek"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="input p AB/AD"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMDPLsisimiringpanjang"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input p BC/DC"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btnMSPL"
+                    android:layout_width="100dp"
+                    android:layout_height="122dp"
+                    android:text="mencari sisi pendek / sisi AB dan AD"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="135dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMSPLdiagonalpendek"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input p DB"
+                        android:textAlignment="center"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMSPLmiringpanjang"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="input p BC/DC"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMSPLdiagonalpanjang"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input p AC"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btnMSPaL"
+                    android:layout_width="100dp"
+                    android:layout_height="135dp"
+                    android:text="mencari sisi panjang / sisi BC dan DC"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="135dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMSPaLdiagonalpendek"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input p DC"
+                        android:textAlignment="center"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMSPaLsisimiringpendek"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="input p AB/AD"/>
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/etMSPaLdiagonalpanjang"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input p AC"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

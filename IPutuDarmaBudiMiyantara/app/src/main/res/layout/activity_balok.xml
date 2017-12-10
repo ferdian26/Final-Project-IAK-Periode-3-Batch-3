@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Balok"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="291dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center"
+                android:src="@drawable/balok"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balok"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etpanjangbalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Panjang/ A B"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/ettinggibalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Tinggi/ t"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/etlebarbalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Lebar/B C"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnluaspermukaanbalok"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas permukaan"/>
+                <Button
+                    android:id="@+id/btnkelilingpermukaanbalok"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="keliling permukaan"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnvolumebalok"
+                android:layout_gravity="center"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:text="volume balok"/>
+            <TextView
+                android:id="@+id/tvHasilBalok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Bangunruang"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bangun Datar"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:background="@color/birumuda"
+        android:layout_margin="3dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/btnKubus"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Kubus" />
+        <Button
+            android:id="@+id/btnBalok"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Balok" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnKrucut"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Krucut" />
+        <Button
+            android:id="@+id/btnPrisma"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Prisma" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnLimas"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Limas" />
+        <Button
+            android:id="@+id/btnTabung"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Tabung" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnBola"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Bola" />
+    </LinearLayout>
+
+</LinearLayout>

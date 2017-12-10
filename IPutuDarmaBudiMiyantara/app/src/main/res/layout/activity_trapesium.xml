@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbangundatar"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Trapesium"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luas Trapesium"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="285dp"
+                android:layout_height="147dp"
+                android:src="@drawable/trapesium"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etTrapesiumSisi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Panjang A B"
+                android:textAlignment="center" />
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etTrapesiumSisi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Panjang D C"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etTrapesiumTinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Tinggi Aa/ Bb"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnTrapesiumLuas"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="0.05" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keliling Trapeisum"
+                android:textSize="30sp"
+                android:textAlignment="center" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etTrapesiumSisi1Keliling"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Sisi 1/ A B"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etTrapesiumsisi2Keliling"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Sisi 2/ B C"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etTrapesiumsisi3Keliling"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Sisi 3/ CD"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etTrapesiumsisi4Keliling"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Sisi 4/ AD"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnTrapesiumKeliling"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHasilTrapesium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

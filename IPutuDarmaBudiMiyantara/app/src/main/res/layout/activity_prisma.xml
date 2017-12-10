@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Prisma"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Prisma Alas Segitiga / 3 sisi"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="291dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center"
+                android:src="@drawable/prisma"/>
+            <EditText
+                android:id="@+id/etLuasAlasPrisma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan luas alas/  A B C"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/etluasSelimutPrisma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan luas selimut"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/ettinggiPrisma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan tinggi Prisma/ A D"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnluasPermukaanPrisma"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas permukaan"/>
+                <Button
+                    android:id="@+id/btnvolumePrisma"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="volume Prisma"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHasilPrisma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jika_tidak_diketahui"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnCariAlasPrisma"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas alas" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etAlasCariAlasPrisma"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:hint="alas segitiga"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"/>
+                    <EditText
+                        android:id="@+id/etTinggiCariAlasPrisma"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:hint="tinggi segitiga"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnCariSelimutPrisma"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas selimut"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                    <EditText
+                        android:id="@+id/etKelilingCariSelimutPrisma"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:hint="keliling alas"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"/>
+                    <EditText
+                        android:id="@+id/etTinggiCariSelimutPrisma"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:hint="tinggi prisma"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

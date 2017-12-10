@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="stikombali.alathitung.Bangundatar">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bangun Datar"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:background="@color/birumuda"
+        android:layout_margin="3dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/btnSegitiga"
+                android:layout_width="127dp"
+                android:layout_height="80dp"
+                android:text="Segitiga" />
+
+            <Button
+                android:id="@+id/btnPersegi"
+                android:layout_width="127dp"
+                android:layout_height="80dp"
+                android:text="Persegi" />
+
+            <Button
+                android:id="@+id/btnLingkaran"
+                android:layout_width="127dp"
+                android:layout_height="80dp"
+                android:text="Lingkaran" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnJajargenjang"
+                android:layout_width="127dp"
+                android:layout_height="80dp"
+                android:text="Jajar Genjang"/>
+
+            <Button
+                android:id="@+id/btnBelahketupat"
+                android:layout_width="127dp"
+                android:layout_height="80dp"
+                android:text="Belah ketupat" />
+            <Button
+                android:id="@+id/btnTrapesium"
+                android:layout_width="127dp"
+                android:layout_height="80dp"
+                android:text=" bangun trapesium"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLayanglayag"
+            android:layout_width="127dp"
+            android:layout_height="80dp"
+            android:text="Layang layang"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+</LinearLayout>

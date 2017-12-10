@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.info"
+    android:orientation="vertical"
+    android:background="@drawable/imgmate1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alat Hitung"
+        android:textAlignment="center"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create by:"
+        android:textAlignment="center"
+        android:textSize="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I Putu Darma Budi Miyantara"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alat Hitung ini berguna untuk membantu untuk mengajari anaknya atau juga bisa digunakan untuk membantu mengerjakan tugas sekolah. Alat hitung ini memiliki berbagai macam fitur seperti :"
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator"
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perhitungan Luas Dan Keliling Bangun Datar"
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perhitungan Volume, Luas Selimut dan Luas Permukaan"
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konversi satuan, Luas, Volume, dan Berat"
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini juga dapat mencari sisi bangun datar yang tidak diketahui di soal. Seperti kebanyakan soal-soal yang tidak mencantumkan beberapa sisi nya yang tidak diketahui. Jadi para pelajar / pengajar pastinya akan kesulitan dengan soal seperti itu maka disini saya menambahkan fitur tersebut."
+        android:textSize="17sp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

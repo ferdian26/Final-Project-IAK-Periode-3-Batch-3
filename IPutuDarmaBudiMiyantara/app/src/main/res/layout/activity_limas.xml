@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Limas"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limas Segitiga, Segiempat, Segilima dan juga Segienam"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etLuasAlasLimas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan luas alas"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/etLuasSisiTegakLimas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan luas sisi tegak"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/etJumlahSisiLimas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan jumlah sisi"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/etTinggiLimas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan tinggi"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnLuasPermukaanLimas"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas permukaan"/>
+                <Button
+                    android:id="@+id/btnVolumeLimas"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="volume Limas"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHasilLimas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jika_tidak_diketahui"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnCariLuasAlasSegitigaLimas"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas alas segitiga"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etalasAlasLimas"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input alas"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"/>
+                    <EditText
+                        android:id="@+id/etTinggiAlasLimas"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:hint="input tinggi"
+                        android:textAlignment="center"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnLuasTegakLimas"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas sisi tegak segitiga"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <EditText
+                            android:id="@+id/etAlasTegak"
+                            android:inputType="numberDecimal"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:hint="input alas"
+                            android:textAlignment="center"/>
+                        <EditText
+                            android:id="@+id/etTinggiTegak"
+                            android:inputType="numberDecimal"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content" 
+                            android:hint="input tinggi"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnCariLuasAlasSegiempatLimas"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="luas alas segi empat sama sisi"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/etSisiSegiempetLimas"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukan salah satu sisi"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

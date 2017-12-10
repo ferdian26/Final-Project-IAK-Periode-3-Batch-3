@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stikombali.alathitung.Kubus"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kubus"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="291dp"
+                android:layout_height="148dp"
+                android:src="@drawable/kubus"
+                android:layout_gravity="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etSisiKubus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Luas Salah Satu Sisi"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="atau masukan"
+                android:textAlignment="center"/>
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/etRusukKubus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Panjang Salah Satu Rusuk"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btnLuasPerkubus"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas Permukaan"/>
+                <Button
+                    android:id="@+id/btnKelPerKubus"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling Permukaan"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnVolKubus"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:text="volume kubus"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tvHasilKubus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
