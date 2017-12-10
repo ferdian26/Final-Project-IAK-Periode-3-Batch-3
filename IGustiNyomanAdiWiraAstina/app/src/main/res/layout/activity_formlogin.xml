@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383838"
+    tools:context="aplikasibaru.myapplication.Formlogin">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="#f7f3f3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55ab89">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+                android:text="Login Aplikasi"
+                android:textAlignment="center"
+                android:textColor="#fdfcfc"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+
+            <EditText
+                android:id="@+id/etuser"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:padding="10dp"
+                android:background="#fdfcfc"/>
+
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:background="#fdfcfc"/>
+
+            <Button
+                android:id="@+id/blogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="#55ab89"
+                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/bregister"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="#55ab89"
+                android:text="Register"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
