@@ -1,82 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
     android:background="@drawable/imgmate"
     android:orientation="vertical"
-    tools:context="stikombali.alathitung.menu"
-    android:layout_centerHorizontal="true">
+    tools:context="stikombali.alathitung.menu">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:gravity="center"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alat Hitung"
-            android:textSize="30sp"
-            android:textColor="@color/red"
             android:layout_gravity="center"
-            android:textStyle="bold|italic"/>
+            android:text="Alat Hitung"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
 
         <EditText
-            android:layout_marginTop="10dp"
             android:id="@+id/Value1"
             android:layout_width="368dp"
             android:layout_height="wrap_content"
-            android:hint="Masukan angka pertama"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:textAlignment="center"
-            android:inputType="numberDecimal" />
+            android:hint="Masukan angka pertama"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
         <EditText
             android:id="@+id/Value2"
             android:layout_width="368dp"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteY="45dp"
-            tools:layout_editor_absoluteX="8dp"
             android:gravity="center"
             android:hint="Masukan angka kedua"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
-            android:inputType="numberDecimal" />
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <!-- todo 2: sebaiknya hasil perhitungan ditaruh di tempat khusus untuk penyimpanan hasil perhitungan -->
+        <TextView
+            android:id="@+id/tv_hasil_perhitungan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hasil Perhitungan"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
+
             <Button
                 android:id="@+id/btnTambah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
                 android:textSize="23sp" />
+
             <Button
                 android:id="@+id/btnKurang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:textSize="23sp"/>
+                android:textSize="23sp" />
+
             <Button
                 android:id="@+id/btnKali"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="*"
-                android:textSize="23sp"/>
+                android:textSize="23sp" />
+
             <Button
                 android:id="@+id/btnBagi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="/"
-                android:textSize="23sp"/>
+                android:textSize="23sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
+
             <Button
                 android:id="@+id/btnPersen"
                 android:layout_width="wrap_content"
@@ -103,51 +122,57 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="akar 2"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnbangundatar"
                 android:layout_width="127dp"
                 android:layout_height="70dp"
-                android:text="bangun datar"/>
+                android:text="bangun datar" />
+
             <Button
                 android:id="@+id/btnbangunruang"
                 android:layout_width="127dp"
                 android:layout_height="70dp"
-                android:text="bangun ruang"/>
+                android:text="bangun ruang" />
+
             <Button
                 android:id="@+id/btnconversisatuan"
                 android:layout_width="127dp"
                 android:layout_height="70dp"
-                android:text="conversi satuan"/>
+                android:text="conversi satuan" />
         </LinearLayout>
 
 
     </LinearLayout>
+
     <Button
         android:id="@+id/btninfo"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="info"
-        android:textSize="10sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:text="info"
+        android:textSize="10sp" />
+
     <TextView
         android:id="@+id/bk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="by : BK"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
-        android:textStyle="italic"/>
+        android:text="by : BK"
+        android:textStyle="italic" />
+
 </RelativeLayout>

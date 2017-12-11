@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Perhitungan.iml" filepath="$PROJECT_DIR$/Perhitungan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IPutuDarmaBudiMiyantara.iml" filepath="$PROJECT_DIR$/IPutuDarmaBudiMiyantara.iml" />
+      <module fileurl="file://D:\Final-Project-IAK-Periode-3-Batch-3\IPutuDarmaBudiMiyantara\Perhitungan.iml" filepath="D:\Final-Project-IAK-Periode-3-Batch-3\IPutuDarmaBudiMiyantara\Perhitungan.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Final-Project-IAK-Periode-3-Batch-3\IPutuDarmaBudiMiyantara\app\app.iml" filepath="D:\Final-Project-IAK-Periode-3-Batch-3\IPutuDarmaBudiMiyantara\app\app.iml" />
     </modules>
   </component>
 </project>
