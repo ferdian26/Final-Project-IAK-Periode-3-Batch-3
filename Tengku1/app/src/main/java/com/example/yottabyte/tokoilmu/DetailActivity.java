@@ -36,6 +36,10 @@ public class DetailActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.mn_shop:
                 Toast.makeText(this, "Anda Membeli " + name + "Dengan Harga " + price, Toast.LENGTH_SHORT).show();
+
+                // sudah menggunakan option menu... keren!
+                // coba buatkan layout untuk mengolah data transaksi
+
                 break;
         }
         return super.onOptionsItemSelected(item);

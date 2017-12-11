@@ -1,13 +1,11 @@
 package com.example.yottabyte.tokoilmu;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -26,7 +24,9 @@ public class ListActivity extends AppCompatActivity {
         setupEnv();
         setupList();
         loadDummyData();
-        rv_list = (RecyclerView) findViewById(R.id.rv_list);
+
+        // todo 1: kode ini sudah di deklarasikan dalam method setupEnv()
+        //rv_list = (RecyclerView) findViewById(R.id.rv_list);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class ListActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.mn_exit:
                 finish();
                 break;
@@ -48,14 +48,15 @@ public class ListActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
+    // todo 2: method ini tidak digunakan, sebaiknya di non-aktifkan
+    /*@Override
     public <T extends View> T findViewById(int id) {
         return super.findViewById(id);
-    }
+    }*/
 
     private void loadDummyData() {
-        for (int i = 0; i < 8; i ++){
-            list.add(new MenuData("Python" , "Selengkapnya"));
+        for (int i = 0; i < 4; i++) {
+            list.add(new MenuData("Python " + i, "Selengkapnya"));
         }
         adapter.replaceAll(list);
     }

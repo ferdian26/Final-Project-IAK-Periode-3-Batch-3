@@ -1,51 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="30dp"
-    tools:context="com.example.yottabyte.tokoilmu.MainActivity"
-    >
+    tools:context="com.example.yottabyte.tokoilmu.MainActivity">
+
+    <!-- todo 4: belajar lagi cara membuat layout,
+    kapan harus menggunakan match_parent atau wrap_content
+    kapan harus dibungkus layout baru
+    kapan harus membuat id
+    bagaimana men-disain layout, terutama layout untuk item -->
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tv_menu_name"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:orientation="vertical"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="10dp"
-            >
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Python"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_menu_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:text="Python"
-                android:layout_gravity="center"
-                android:textStyle="bold" />
+        <com.jackandphantom.circularimageview.CircleImage
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/python" />
 
-
-            <com.jackandphantom.circularimageview.CircleImage
-                android:layout_width="130dp"
-                android:layout_height="100dp"
-                android:src="@drawable/python"
-                />
-
-            <TextView
-                android:id="@+id/tv_menu_price"
-                android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="Selengkapnya" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Selengkapnya" />
 
     </LinearLayout>
 
@@ -55,29 +50,25 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_menu_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:text="Android"
             android:layout_gravity="center"
+            android:text="Android"
+            android:textSize="24sp"
             android:textStyle="bold" />
-
 
         <com.jackandphantom.circularimageview.CircleImage
             android:layout_width="130dp"
             android:layout_height="100dp"
-            android:src="@drawable/android"
-            />
+            android:src="@drawable/android" />
 
         <TextView
-            android:id="@+id/tv_menu_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:text="Selengkapnya" />
-    </LinearLayout>
 
+    </LinearLayout>
 
 </LinearLayout>
