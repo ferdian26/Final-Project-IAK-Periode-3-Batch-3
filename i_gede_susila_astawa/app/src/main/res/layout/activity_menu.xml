@@ -15,52 +15,65 @@
 
     </android.support.v4.view.ViewPager>
 
-    <TextView
-        android:id="@+id/welcome"
+    <!-- todo 3: ini selera sih sebenarnya -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/viewPager"
-        android:text="WELCOME"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="10dp"
-        android:background="#e5e5e5"
-        android:padding="5dp"
-        android:text="Please enter your name\n to order tickets"
-        android:textAlignment="center"
-        android:textSize="17sp" />
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewPager"
+            android:text="WELCOME"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <EditText style="@style/editTextEntryName"
-        android:id="@+id/username"
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#e5e5e5"
+            android:padding="5dp"
+            android:text="Please enter your name\n to order tickets"
+            android:textAlignment="center"
+            android:textSize="17sp" />
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text1"
-        android:layout_margin="15dp"
-        android:hint="Your name" />
+        <EditText
+            android:id="@+id/username"
+            style="@style/editTextEntryName"
 
-    <Button
-        android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/username"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text="START" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Your name" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/welcome"
-        android:layout_marginBottom="20dp"
-        android:text="o  o  o"
-        android:textAlignment="center" />
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="START" />
+
+        <!-- todo 4: ini ga ada efeknya, sebaiknya dihapus -->
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/welcome"
+            android:layout_marginBottom="20dp"
+            android:text="o  o  o"
+            android:textAlignment="center" />-->
+
+    </LinearLayout>
 
 </RelativeLayout>

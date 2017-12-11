@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Oticket.iml" filepath="$PROJECT_DIR$/Oticket.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/i_gede_susila_astawa.iml" filepath="$PROJECT_DIR$/i_gede_susila_astawa.iml" />
     </modules>
   </component>
 </project>
