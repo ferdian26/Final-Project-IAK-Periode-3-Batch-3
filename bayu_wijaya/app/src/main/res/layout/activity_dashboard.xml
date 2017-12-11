@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context="com.lombok_tourism.www.voyagetolombok.DashboardActivity">
 
+    <!-- todo 1: hati-hati men-disain layout
+    kode layout yang sepanjang ini, kedepannya akan sulit di kelola -->
+
+    <!-- todo 2: setelah di test, ternyata tombol yang bisa dipencet cuma satu
+    yaitu, tombol "Place Interesting"
+
+    saran saja, kalau memang button yang lain belum siap, beri warna abu atau di disable
+    sehingga tidak membuat user mengklik tombol tersebut
+    ini penting dari sisi UX / user experience -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

@@ -1,17 +1,14 @@
 package com.lombok_tourism.www.voyagetolombok;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.support.v4.view.ViewPager;
-
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
-
 
 import java.util.HashMap;
 
@@ -23,6 +20,9 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        // kalau kode masih sedikit, gpp kalau digabung jadi satu di onCreate
+        // tapi kalau aplikasi ini berkembang nantinya, sebaiknya buatkan method
+        // untuk menyimpan sesuai dengan fungsinya masing-masing
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
 
@@ -62,8 +62,7 @@ public class DashboardActivity extends AppCompatActivity {
         sliderLayout.setDuration(4000);
     }
 
-    public void hotel_event(View view)
-    {
+    public void hotel_event(View view) {
         Intent intent = new Intent(DashboardActivity.this, ListSummaryWisataActivity.class);
         startActivity(intent);
     }
