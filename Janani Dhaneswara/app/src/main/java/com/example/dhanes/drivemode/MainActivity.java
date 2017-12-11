@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         music = findViewById(R.id.music);
         home = findViewById(R.id.home);
 
+        // todo 2: coba buatkan activity pada masing-masing action
+
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

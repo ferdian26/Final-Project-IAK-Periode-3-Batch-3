@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.dhanes.drivemode.MainActivity">
 
+    <!-- todo 1: layoutnya masih static, coba gunakan recycler view -->
+
     //MAPs
     <RelativeLayout
         android:id="@id/relmaps"

@@ -15,13 +15,13 @@ public class Opening extends AppCompatActivity {
         setTimer(2000, MainActivity.class);
     }
 
-        private void setTimer (int delay, final Class intent){
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    startActivity(new Intent(getApplicationContext(), intent));
-                    finish();
-                }
-        },delay);
+    private void setTimer(int delay, final Class intent) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(getApplicationContext(), intent));
+                finish();
+            }
+        }, delay);
     }
 }
