@@ -22,10 +22,14 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         getSupportActionBar().setTitle("Form Login");
 
-
         iv_logo = (ImageView) findViewById(R.id.iv_logo);
         et_username = (EditText) findViewById(R.id.et_username);
         et_password = (EditText) findViewById(R.id.et_password);
+
+        // todo 2: untuk tester, sebaiknya berikan clue untuk masuk ke aplikasi
+        String pass = "123";
+        et_password.setHint("Password (" + pass + ")");
+
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +39,10 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (!user.isEmpty() && !pass.isEmpty() )
                 {
-                    if (pass.equals("123"))
+
+                    // todo 3: sebaiknya password tidak hardcoded
+                    if (pass.equals(pass))
+
                     {
                         Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                         iv_logo.setImageDrawable(getResources().getDrawable(R.drawable.fox));
@@ -56,5 +63,4 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
 }

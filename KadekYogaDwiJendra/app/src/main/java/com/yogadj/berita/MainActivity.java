@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+
+                // todo 1: gunakan finish() agar tidak kembali ke activity splash screen ini
+                finish();
+
             }
         }, 3000);
     }

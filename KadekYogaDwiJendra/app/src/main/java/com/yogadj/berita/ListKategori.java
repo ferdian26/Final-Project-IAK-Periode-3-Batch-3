@@ -1,7 +1,7 @@
 package com.yogadj.berita;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,13 +11,11 @@ import java.util.List;
 
 public class ListKategori extends AppCompatActivity {
 
-
     RecyclerView recyclerView;
     LinearLayoutManager linear;
 
     List<pojo> item;
     Adapter adapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +23,19 @@ public class ListKategori extends AppCompatActivity {
         setContentView(R.layout.activity_list_kategori);
         getSupportActionBar().setTitle("HOT NEWS");
 
-
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
-        linear = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linear);
-
         item = new ArrayList<>();
+        loadDataDummy();
+
+        adapter = new Adapter(this, item);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+    }
+
+    // todo 4: pisahkan load data agar lebih rapi
+    private void loadDataDummy() {
         item.add(new pojo(R.drawable.foto, "Football", "Derby Manchester dan Merseyside Panaskan Akhir Pekan Ini",
                 "Jakarta - Dua laga derby akan tersaji di Liga Inggris pekan ini. Selain derby panas antara Manchester United dan Manchester City, akan ada pula derby Merseyside.\n" +
                         "\n" +
@@ -126,13 +130,6 @@ public class ListKategori extends AppCompatActivity {
                         "Menariknya, ini juga menjadi kali kedua beruntun Bulls kalah dengan selisih satu poin saja. Tepat sebelum ini mereka juga tunduk 110-110 dari Denver Nuggets.\n" +
                         "\n" +
                         "Dengan catatan tandingnya saat ini Bulls menjadi tim terburuk secara keseluruhan di musim reguler sejauh ini. Sementara Kings sedikit lebih baik dengan catatan 7-15.\n "));
-
-        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
-
-        adapter = new Adapter(this, item);
-
-        recyclerView.setAdapter(adapter);
-
     }
 }
 

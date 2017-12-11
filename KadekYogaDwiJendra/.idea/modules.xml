@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Berita.iml" filepath="$PROJECT_DIR$/Berita.iml" />
+      <module fileurl="file://D:\Final-Project-IAK-Periode-3-Batch-3\KadekYogaDwiJendra\Berita.iml" filepath="D:\Final-Project-IAK-Periode-3-Batch-3\KadekYogaDwiJendra\Berita.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KadekYogaDwiJendra.iml" filepath="$PROJECT_DIR$/KadekYogaDwiJendra.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
