@@ -5,12 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
-    <View
+
+    <!-- todo 6: sebaiknya gunakan divider yang disediakan, kecuali mau custom -->
+    <!--<View
         android:layout_width="match_parent"
-        android:visibility="visible"
         android:layout_height="1dp"
+        android:background="#d6d6d6"
         android:padding="2dp"
-        android:background="#d6d6d6"/>
+        android:visibility="visible" />-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -58,4 +61,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>

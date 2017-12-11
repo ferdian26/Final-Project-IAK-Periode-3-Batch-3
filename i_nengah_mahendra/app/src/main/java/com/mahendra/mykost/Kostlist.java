@@ -2,6 +2,7 @@ package com.mahendra.mykost;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -14,8 +15,6 @@ import java.util.List;
 public class Kostlist extends AppCompatActivity {
 
     RecyclerView rvlistkost;
-    LinearLayoutManager linear;
-
     List<Kost> item;
     KostAdapter adapter;
 
@@ -24,12 +23,45 @@ public class Kostlist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kostlist);
 
+        // todo 3: pisahkan setup, list, dan load data ke dalam method yang berbeda
+        setupEnv();
+        setupList();
+
+        loadDataDummy();
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_search, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.mn_search:
+                Toast.makeText(this, "Anda Mengklick Menu Search", Toast.LENGTH_SHORT).show();
+
+                // sudah pakai option menu... keren!
+                // coba buatkan layout baru untuk menampilkan form pencarian data kos
+
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void setupEnv() {
         rvlistkost = (RecyclerView) findViewById(R.id.rv_list);
-
-        linear = new LinearLayoutManager(this);
-        rvlistkost.setLayoutManager(linear);
-
         item = new ArrayList<>();
+    }
+
+    private void setupList() {
+        adapter = new KostAdapter(item);
+        rvlistkost.setLayoutManager(new LinearLayoutManager(this));
+        rvlistkost.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        rvlistkost.setAdapter(adapter);
+    }
+
+    private void loadDataDummy() {
         item.add(new Kost(R.drawable.akasia, "KOST BU IRMA", "IDR. 845.000", "Address: Jl. Tukad Balian IV, No.67 Panjer", "Deskripsi:\n" +
                 "Kost Bu Irma, sebuah kost yang berlokasi di Jl. Pakisaji, Gang Cengana Sari XIV No. 1, Hayam Wuruk, Denpasar. Bangunan 2 lantai ini memiliki total 9 kamar dengan ukuran 4 x 3 meter.\n" +
                 "\n" +
@@ -323,25 +355,5 @@ public class Kostlist extends AppCompatActivity {
                 "Bulanan   \n" +
                 " - Rp 1.500.000 (type standar)\n" +
                 " - Rp 2.000.000 (type suite)"));
-
-        adapter = new KostAdapter(this, item);
-
-        rvlistkost.setAdapter(adapter);
-
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_search, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.mn_search:
-                Toast.makeText(this, "Anda Mengklick Menu Search", Toast.LENGTH_SHORT).show();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,6 +1,5 @@
 package com.mahendra.mykost;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,20 +9,21 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.security.AccessController;
 import java.util.List;
 
 /**
  * Created by MAHENDRA on 12/8/2017.
  */
 
-public class KostAdapter extends RecyclerView.Adapter<KostAdapter.KostHolder>{
+public class KostAdapter extends RecyclerView.Adapter<KostAdapter.KostHolder> {
 
-    Context context;
-    List<Kost>item;
+    // todo 4: context tidak digunakan dimanapun, sebaiknya variabel ini di non-aktifkan
+    //Context context;
 
-    public KostAdapter(Context context, List<Kost> item) {
-        this.context = context;
+    List<Kost> item;
+
+    public KostAdapter(List<Kost> item) {
+        //this.context = context;
         this.item = item;
     }
 
@@ -63,7 +63,7 @@ public class KostAdapter extends RecyclerView.Adapter<KostAdapter.KostHolder>{
         return item.size();
     }
 
-    class KostHolder extends RecyclerView.ViewHolder{
+    class KostHolder extends RecyclerView.ViewHolder {
 
         LinearLayout linearLayout;
         ImageView imageItem;
