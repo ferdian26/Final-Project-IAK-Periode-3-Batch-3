@@ -21,14 +21,13 @@
         <activity
             android:name=".Formlogin"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".listkategori">
-
-        </activity>
+        <activity android:name=".listkategori" />
         <activity
             android:name=".register"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name=".ActivityDetail"
-            android:parentActivityName=".listkategori"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ActivityDetail"
+            android:parentActivityName=".listkategori" />
     </application>
 
 </manifest>

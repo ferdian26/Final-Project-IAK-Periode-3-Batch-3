@@ -17,52 +17,55 @@ import java.util.List;
  */
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-    private List<Data> list= new ArrayList<>();
 
-    public RecyclerViewAdapter(List<Data> list) {this.list=list;}
+    private List<Data> list = new ArrayList<>();
+
+    public RecyclerViewAdapter(List<Data> list) {
+        this.list = list;
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(
                 LayoutInflater.from(parent.getContext()).inflate(
                         R.layout.itemview, parent, false)
-                );
-
+        );
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.bind(list.get(position), position);
-
     }
 
     @Override
     public int getItemCount() {
         return list.size();
     }
-    public static class ViewHolder extends  RecyclerView.ViewHolder{
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvkategori;
         ImageView ivlogo;
 
         public ViewHolder(View itemView) {
-            super( itemView );
-            tvkategori = itemView.findViewById( R.id.tvkategori );
-            ivlogo = itemView.findViewById( R.id.ivlogo );
+            super(itemView);
+            tvkategori = itemView.findViewById(R.id.tvkategori);
+            ivlogo = itemView.findViewById(R.id.ivlogo);
         }
-        public void bind (final Data item, final int position){
-            tvkategori.setText( item.getTvkategori() );
-            ivlogo.setImageResource( item.getIvlogo() );
 
-            itemView.setOnClickListener( new View.OnClickListener() {
+        public void bind(final Data item, final int position) {
+            tvkategori.setText(item.getTvkategori());
+            ivlogo.setImageResource(item.getIvlogo());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(itemView.getContext() ,item.getTvkategori(), Toast.LENGTH_SHORT ).show();
-                    Intent intent= new Intent( itemView.getContext(), ActivityDetail.class  );
-                    intent.putExtra( "position",position);
+                    Toast.makeText(itemView.getContext(), item.getTvkategori(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(itemView.getContext(), ActivityDetail.class);
+                    intent.putExtra("position", position);
 
-                    itemView.getContext().startActivity( intent );
+                    itemView.getContext().startActivity(intent);
                 }
-            } );
+            });
         }
     }
 }

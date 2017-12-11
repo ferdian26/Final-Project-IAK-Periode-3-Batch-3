@@ -17,30 +17,37 @@ public class register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_register );
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
 
-        etremail= findViewById( R.id.etremail );
-        etruser= findViewById( R.id.etruser );
-        etrpass = findViewById( R.id.etrpass );
-        bregister= findViewById( R.id.bregister );
+        // kalau kodingnya masih sedikit sih gpp
+        // tapi kalau aplikasinya berkembang, ini yang repot
+        // rapikan lagi ya
 
-        bregister.setOnClickListener( new View.OnClickListener() {
+        etremail = findViewById(R.id.etremail);
+        etruser = findViewById(R.id.etruser);
+        etrpass = findViewById(R.id.etrpass);
+        bregister = findViewById(R.id.bregister);
+
+        bregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = etremail.getText().toString();
                 String user = etruser.getText().toString();
                 String pass = etrpass.getText().toString();
+
                 if (!email.isEmpty() && !user.isEmpty() && !pass.isEmpty()) {
-                    Toast.makeText( register.this, "Selamat Datang di Aplikasi", Toast.LENGTH_SHORT ).show();
-                    Intent intent = new Intent( register.this, listkategori.class );
-                    startActivity( intent );
+                    Toast.makeText(register.this, "Selamat Datang di Aplikasi", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(register.this, listkategori.class);
+                    startActivity(intent);
+
+                    // todo 4: agar tidak kembali lagi ke form login, jalankan method finish()
+                    finish();
+
                 } else {
-                    Toast.makeText( register.this, "Data yang anda masukan harus lengkap", Toast.LENGTH_SHORT ).show();
+                    Toast.makeText(register.this, "Data yang anda masukan harus lengkap", Toast.LENGTH_SHORT).show();
                 }
             }
-        } );
-
-
+        });
     }
 }
